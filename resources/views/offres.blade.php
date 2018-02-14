@@ -1,64 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.master')
 
-  <head>
+@section('title', 'Offres')
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Offres</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,400i,700" rel="stylesheet">
-    
-    <!-- Custom styles for this template -->
-    <link href="css/business-casual.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/providems_style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-  </head>
-
-  <body>
-
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">Pour un déménagement à la hauteur de vos exigences</span>
-      <span class="site-heading-lower">Providems</span>
-    </h1>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{route('accueil')}}">Accueil
-                
-              </a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{route('services')}}">Nos services</a>
-            </li>
-            <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{route('offres')}}">Nos offres
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{route('contact')}}">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+@section('content')
 
   <div id="pricing" class="container-fluid">
   <div class="text-center">
@@ -78,9 +22,10 @@
             Primi igitur omnium statuuntur Epigonus et
             Omitto iuris dictionem in libera civitate contra</p>
         </div>
+
         <div class="panel-footer">
           
-          <button class="btn btn-lg">Cette formule me convient!</button>
+          <button class="btn btn-lg"><a href="#formule1" style="color:black"> Cette formule me convient!</a></button>
         </div>
       </div>      
     </div>     
@@ -96,10 +41,9 @@
             Primi igitur omnium statuuntur Epigonus et
             Omitto iuris dictionem in libera civitate contra</p>
           </div>
+        
         <div class="panel-footer">
-          
-          <button class="btn btn-lg">Cette formule me convient!</button>
-       
+          <button class="btn btn-lg"><a href="#formule2" style="color:black" > Cette formule me convient!</a></button>       
         </div>
       </div>      
     </div>       
@@ -115,9 +59,9 @@
           Primi igitur omnium statuuntur Epigonus et
           Omitto iuris dictionem in libera civitate contra</p>
         </div>
-        <div class="panel-footer">
-          
-          <button class="btn btn-lg">Cette formule me convient!</button>
+
+        <div class="panel-footer">          
+          <button class="btn btn-lg"><a href="#formule3" style="color:black"> Cette formule me convient!</a></button>
         </div>
       </div>      
     </div>    
@@ -125,20 +69,57 @@
 </div>
 
 
+  <div classe="economique">
+    <h1 id="formule1">La formule économique</h1>
+      <p>
+          <ul>
+            <li>Et olim licet otiosae sint tribus pacataeque</li>
+            <li>Et quoniam inedia gravi adflictabantur, locum</li>
+            <li>Circa hos dies Lollianus primae lanuginis</li>
+            <li>Cum saepe multa, tum memini domi in hemicyclio</li>
+            <li>Orientis vero limes in longum protentus et rectum</li>
+            <li>Sin autem ad adulescentiam perduxissent, dirimi</li>
+            <li>Haec igitur lex in amicitia sanciatur, ut neque</li>
+            <li>Et quia Mesopotamiae tractus omnes crebro</li>
+            <li>Quo cognito Constantius ultra mortalem modum</li>
+            <li>Latius iam disseminata licentia onerosus bonis</li>
+          </ul>
+        </p>
+  </div> 
 
-    <footer class="footer text-faded text-center py-5">
-      <div class="container">
-        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
-      </div>
-    </footer>
+  <div classe="standard">
+    <h1 id="formule2">La formule standard</h1>
+      <p>
+        <ul>
+          <li>Et olim licet otiosae sint tribus pacataeque</li>
+          <li>Et quoniam inedia gravi adflictabantur, locum</li>
+          <li>Circa hos dies Lollianus primae lanuginis</li>
+          <li>Cum saepe multa, tum memini domi in hemicyclio</li>
+          <li>Orientis vero limes in longum protentus et rectum</li>
+          <li>Sin autem ad adulescentiam perduxissent, dirimi</li>
+          <li>Haec igitur lex in amicitia sanciatur, ut neque</li>
+          <li>Et quia Mesopotamiae tractus omnes crebro</li>
+          <li>Quo cognito Constantius ultra mortalem modum</li>
+          <li>Latius iam disseminata licentia onerosus bonis</li>
+        </ul>
+      </p>
+  </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-
-  <!-- Script to highlight the active date in the hours list -->
-  
-
-</html>
+  <div classe="luxe">
+    <h1 id="formule3">La formule luxe</h1>
+      <p>
+        <ul>
+          <li>Et olim licet otiosae sint tribus pacataeque</li>
+          <li>Et quoniam inedia gravi adflictabantur, locum</li>
+          <li>Circa hos dies Lollianus primae lanuginis</li>
+          <li>Cum saepe multa, tum memini domi in hemicyclio</li>
+          <li>Orientis vero limes in longum protentus et rectum</li>
+          <li>Sin autem ad adulescentiam perduxissent, dirimi</li>
+          <li>Haec igitur lex in amicitia sanciatur, ut neque</li>
+          <li>Et quia Mesopotamiae tractus omnes crebro</li>
+          <li>Quo cognito Constantius ultra mortalem modum</li>
+          <li>Latius iam disseminata licentia onerosus bonis</li>
+        </ul>
+      </p>
+  </div>
+@endsection

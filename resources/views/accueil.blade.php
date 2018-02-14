@@ -16,7 +16,7 @@
         <p class="mb-3">Généralement, on utilise un texte en faux latin (le texte ne veut rien dire, il a été modifié), le Lorem ipsum ou Lipsum, qui permet donc de faire office de texte d'attente. L'avantage de le mettre en latin est que l'opérateur sait au premier coup d'oeil que la page contenant ces lignes n'est pas valide, et surtout l'attention du client n'est pas dérangée par le contenu, il demeure concentré seulement sur l'aspect graphique.
         </p>
         <div class="intro-button mx-auto">
-          <a class="btn btn-primary btn-xl" href="#">Demander un devis</a>
+          <a class="btn btn-primary btn-xl boutton devis" href="#">Demander un devis</a>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
            <span class="section-heading-lower">Nos valeurs</span>
           </h2>
           <p class="mb-0"><div class="container values">
-            <div class="row">
+            <div class="row value" >
               <div class="col-sm">
                 Courtoisie
               </div>
@@ -43,7 +43,8 @@
                 Efficacité
               </div>
             </div>
-          </div></p>
+          
+          </p>
         </div>
       </div>
     </div>

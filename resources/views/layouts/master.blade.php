@@ -15,6 +15,7 @@
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/business-casual.min.css" rel="stylesheet">
@@ -27,7 +28,8 @@
 
     <div class="site-heading-container">
       <h1 class="site-heading text-center text-white d-none d-lg-block">
-        <span class="site-heading-upper text-primary mb-3">Pour un déménagement à la hauteur de vos exigences</span>
+        <span class="site-heading-upper text-primary mb-3">Pour un déménagement à la hauteur de vos exigences
+        </span>
         <span class="site-heading-lower">Providems</span>
       </h1>
     </div>
@@ -41,18 +43,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{route('accueil')}}">Accueil
+            <li class="nav-item px-lg-4 {{ App\Helpers\Menu::active('accueil') }}">
+              <a class="nav-link text-uppercase text-expanded " href="{{route('accueil')}}">Accueil
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="{{route('services')}}">Nos services</a>
+            <li class="nav-item {{ App\Helpers\Menu::active('services') }} px-lg-4">
+              <a class="nav-link text-uppercase text-expanded  " href="{{route('services')}}">Nos services</a>
             </li>
-            <li class="nav-item px-lg-4">
+            <li class="nav-item px-lg-4 {{ App\Helpers\Menu::active('offres') }}">
               <a class="nav-link text-uppercase text-expanded" href="{{route('offres')}}">Nos offres</a>
             </li>
-            <li class="nav-item px-lg-4">
+            <li class="nav-item px-lg-4 {{ App\Helpers\Menu::active('contact') }}">
               <a class="nav-link text-uppercase text-expanded" href="{{route('contact')}}">Contact</a>
             </li>
           </ul>
@@ -67,6 +69,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+    <script src="js/main.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
